@@ -5,4 +5,7 @@ WeiXinCase.pdf: WeiXinCase.tex
 all: WeiXinCase.pdf
 
 clean:
-	rm *.aux *.log *.pdf *.synctex.gz
+	del *.aux *.log *.synctex.gz *.fls *.xdv *.fdb_latexmk
+
+cleanall:
+	def *.aux *.log *.synctex.gz *.fls *.xdv *.fdb_latexmk *.pdf
